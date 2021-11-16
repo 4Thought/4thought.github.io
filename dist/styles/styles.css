@@ -3412,8 +3412,6 @@ sup {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 4rem;
-  padding-bottom: 7rem;
 }
 .l-content:after {
   content: " ";
@@ -3945,7 +3943,13 @@ sup {
   position: relative;
   overflow: hidden;
   background-color: #1a2930;
-  padding-top: 52.08333%;
+  height: 100%;
+}
+@media (max-width: 47.99em) {
+  .l-home-hero__media {
+    height: inherit;
+    padding-top: 52.08333%;
+  }
 }
 .l-home-hero__media:after {
   content: "";
@@ -10079,7 +10083,8 @@ body.has-menu-open .l-main:before {
   .section--ambientVideoHero + .section--ambientVideoHero,
   .section--ambientVideoHero + .section--contentHero,
   .section--contentHero + .section--ambientVideoHero,
-  .section--contentHero + .section--contentHero {
+  .section--contentHero + .section--contentHero,
+  .section--featuredStatistic {
     margin-top: 0;
   }
   .section--paginationBanner {
@@ -11644,6 +11649,7 @@ body.has-menu-open .l-main:before {
   .feature-blocks,
   .l-home-hero {
     position: relative;
+    overflow: hidden;
   }
   .feature-blocks .flickity-button,
   .l-home-hero .flickity-button {
