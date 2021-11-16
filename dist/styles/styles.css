@@ -7421,12 +7421,12 @@ body.has-menu-open .l-main:before {
     }
   }
   .hines-logo img {
-    width: 10.1rem;
+    width: 20rem;
     height: 100%;
   }
   @media (min-width: 64em) {
     .hines-logo img {
-      width: 13.86rem;
+      width: 35rem;
     }
   }
   @media (min-width: 64em) {
