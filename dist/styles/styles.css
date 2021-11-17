@@ -7426,7 +7426,6 @@ body.has-menu-open .l-main:before {
   }
   .hines-logo img {
     width: 20rem;
-    height: 100%;
   }
   @media (min-width: 64em) {
     .hines-logo img {
@@ -8228,7 +8227,7 @@ body.has-menu-open .l-main:before {
   @media (max-width: 63.99em) {
     .masthead__inner {
       align-items: center;
-      min-height: 72px;
+      height: 72px;
     }
   }
   @media (min-width: 64em) {
