@@ -5,44 +5,66 @@ if (typeof Element.prototype.addEventListener === "undefined") {
   };
 }
 
-function setupMenuToggle() {
-  var menuToggleInterval = setInterval(function () {
-    var navToggles = document.querySelectorAll("[data-nav-drawer-toggle]");
-    for (var i in navToggles) {
-      var navToggle = navToggles[i];
-      clearInterval(menuToggleInterval);
-      navToggle.addEventListener("click", function () {
-        document
-          .querySelector("[data-nav-drawer]")
-          .classList.toggle("is-active");
-      });
-    }
-  }, 100);
+function playDemo() {
+  var player = document.createElement("div");
+  player.style.width = "66vw";
+  player.style.height = "80vh";
+  player.style.margin = "auto";
+  player.innerHTML =
+    '<iframe src="https://player.vimeo.com/video/646100003?h=ad1d9a49fe&autoplay=1&title=0&byline=0&portrait=0" style="width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe><script src="https://player.vimeo.com/api/player.js"></script>';
+
+  var closeButton = document.createElement("div");
+  closeButton.style.position = "fixed";
+  closeButton.style.fontSize = "4rem";
+  closeButton.style.right = "16vw";
+  closeButton.style.top = "1vh";
+  closeButton.style.color = "white";
+  closeButton.style.cursor = "pointer";
+  closeButton.innerText = "x";
+  player.appendChild(closeButton);
+
+  var wrapper = document.createElement("div");
+  wrapper.style.display = "flex";
+  wrapper.style.width = "100%";
+  wrapper.style.height = "100%";
+  wrapper.style.background = "rgb(0,0,0,0.8)";
+  wrapper.appendChild(player);
+
+  var overlay = document.createElement("div");
+  overlay.style.position = "fixed";
+  overlay.style.zIndex = 9999;
+  overlay.style.left = "0";
+  overlay.style.top = "0";
+  overlay.style.width = "100vw";
+  overlay.style.height = "100vh";
+  overlay.appendChild(wrapper);
+
+  function closePlayer() {
+    document.body.removeChild(overlay);
+  }
+  overlay.addEventListener("click", closePlayer);
+  closeButton.addEventListener("click", closePlayer);
+
+  document.body.appendChild(overlay);
 }
 
-function setupPlayDemo() {
-  var playDemoInterval = setInterval(function () {
-    var playDemoElements = document.querySelectorAll("[data-play-demo]");
-    for (var i in playDemoElements) {
-      var playDemoElement = playDemoElements[i];
-      clearInterval(playDemoInterval);
-      playDemoElement.addEventListener("click", function () {
-        var player = document.createElement("div");
-        player.innerHTML =
-          '<div style="display:flex;width:100%;height:100%;background:rgb(0,0,0,0.8);"><div style="width:80vw;height:80vh;margin:auto;"><iframe src="https://player.vimeo.com/video/646100003?h=ad1d9a49fe&autoplay=1&title=0&byline=0&portrait=0" style="width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><script src="https://player.vimeo.com/api/player.js"></script>';
-        player.style.position = "fixed";
-        player.style.zIndex = 9999;
-        player.style.left = "0";
-        player.style.top = "0";
-        player.style.width = "100vw";
-        player.style.height = "100vh";
-        player.addEventListener("click", function () {
-          document.body.removeChild(player);
-        });
-        document.body.appendChild(player);
-      });
+function setupClickHandler() {
+  document.addEventListener("click", function (e) {
+    var clickedElement = e.target;
+    while (clickedElement) {
+      if (clickedElement.hasAttribute) {
+        if (clickedElement.hasAttribute("data-play-demo")) {
+          playDemo();
+        }
+        if (clickedElement.hasAttribute("data-nav-drawer-toggle")) {
+          document
+            .querySelector("[data-nav-drawer]")
+            .classList.toggle("is-active");
+        }
+      }
+      clickedElement = clickedElement.parentElement;
     }
-  }, 100);
+  });
 }
 
 window.onload = function () {
@@ -66,6 +88,5 @@ window.onload = function () {
       c[b].hasAttribute("data-include") &&
       a(c[b], c[b].getAttribute("data-include"));
 
-  setupMenuToggle();
-  setupPlayDemo();
+  setupClickHandler();
 };
