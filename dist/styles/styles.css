@@ -7053,6 +7053,10 @@ body.has-menu-open .l-main:before {
   .footer__section--top {
     position: relative;
   }
+  .footer__section--bottom {
+    padding-top: 0;
+    padding-bottom: 3rem;
+  }
   @media (min-width: 48em) {
     .footer__section--bottom {
       display: flex;
