@@ -4008,11 +4008,15 @@ sup {
 }
 @media (min-width: 48em) {
   .l-home-hero__content-intro {
-    max-width: 50rem;
+    max-width: 50vw;
   }
 }
 .l-home-hero__content-intro > * + * {
   margin-top: 1.5rem;
+}
+.featured-news {
+  margin-bottom: 4rem;
+  text-decoration: underline;
 }
 @media (min-width: 48em) {
   .l-home-hero__content-intro-headline {
