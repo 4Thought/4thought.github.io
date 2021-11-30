@@ -4006,7 +4006,7 @@ sup {
     color: #fff;
   }
 }
-@media (min-width: 48em) {
+@media (min-width: 65em) {
   .l-home-hero__content-intro {
     max-width: 50vw;
   }
