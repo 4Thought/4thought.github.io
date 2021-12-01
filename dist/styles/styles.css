@@ -4067,7 +4067,7 @@ sup {
 }
 @media (min-width: 48em) {
   .l-image-banner--left .callout-block {
-    width: 32rem;
+    width: 50vw;
     float: left;
     margin-right: 2.75229%;
   }
