@@ -11607,6 +11607,9 @@ body.has-menu-open .l-main:before {
   .u-spacing-mb-xxs {
     margin-bottom: 2.1rem;
   }
+  .u-spacing-mb-s {
+    margin-bottom: 4rem;
+  }
   .u-spacing-mt-xxs {
     margin-top: 2.1rem;
   }
