@@ -2171,6 +2171,9 @@ ol,
 ul {
   list-style: none;
 }
+ul.dotted {
+  list-style: inside;
+}
 blockquote,
 q {
   quotes: none;
@@ -4100,7 +4103,7 @@ sup {
 }
 @media (min-width: 64em) {
   .l-main {
-    padding-top: 108px;
+    /* padding-top: 108px; */
   }
 }
 .l-main:before {
