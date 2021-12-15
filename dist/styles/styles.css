@@ -2174,6 +2174,9 @@ ul {
 ul.dotted {
   list-style: inside;
 }
+ul.dotted li {
+  padding-left: 3rem;
+}
 blockquote,
 q {
   quotes: none;
@@ -4070,7 +4073,7 @@ sup {
 }
 @media (min-width: 48em) {
   .l-image-banner--left .callout-block {
-    width: 50vw;
+    width: 25vw;
     float: left;
     margin-right: 2.75229%;
   }
@@ -7315,7 +7318,7 @@ body.has-menu-open .l-main:before {
       font-size: 3.2rem;
     }
   }
-  .heading:after {
+  /* .heading:after {
     content: "";
     display: block;
     width: 4.1rem;
@@ -7323,7 +7326,7 @@ body.has-menu-open .l-main:before {
     margin-top: 4rem;
     border-bottom: 1px solid;
     border-color: #000000;
-  }
+  } */
   .heading a {
     color: inherit;
     text-decoration: none;
