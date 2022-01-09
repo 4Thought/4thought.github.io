@@ -61,6 +61,9 @@ function setupClickHandler() {
             .querySelector("[data-nav-drawer]")
             .classList.toggle("is-active");
         }
+        if (clickedElement.hasAttribute("data-back-to-top-link")) {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
       }
       clickedElement = clickedElement.parentElement;
     }

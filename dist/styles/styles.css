@@ -9934,8 +9934,8 @@ body.has-menu-open .l-main:before {
   }
   .scroll-btn--up {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 1rem;
+    left: 2rem;
     right: auto;
     overflow: hidden;
   }
