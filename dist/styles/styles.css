@@ -2235,7 +2235,7 @@ img {
   background-color: #000000;
 }
 .u-color-bg-navy {
-  background-color: #1a2930;
+  background-color: #000000;
 }
 .u-color-bg-dark-navy {
   background-color: #17212b;
@@ -7038,7 +7038,7 @@ body.has-menu-open .l-main:before {
     color: #48c0e0;
   }
   .footer {
-    background-color: #1a2930;
+    background-color: #000000;
     position: relative;
   }
   .footer__section {
@@ -7490,6 +7490,10 @@ body.has-menu-open .l-main:before {
       margin-top: 4rem;
       margin-left: 7.33945%;
       margin-right: 7.33945%;
+    }
+    .image-header img {
+      max-height: 20rem;
+      object-fit: cover;
     }
   }
   @media (min-width: 48em) {
