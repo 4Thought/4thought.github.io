@@ -2498,7 +2498,7 @@ img {
 }
 .u-type-h3 {
   font-family: "Montserrat", Georgia, Times, Times New Roman, serif;
-  font-size: 1.25rem;
+  font-size: 2.3rem;
   line-height: 1.25;
 }
 @media (min-width: 48em) {
@@ -2508,7 +2508,7 @@ img {
 }
 .u-type-h4 {
   font-family: "Montserrat", Georgia, Times, Times New Roman, serif;
-  font-size: 0.9rem;
+  font-size: 2rem;
   line-height: 1.25;
 }
 @media (min-width: 48em) {
@@ -7487,7 +7487,7 @@ body.has-menu-open .l-main:before {
   }
   @media (max-width: 47.99em) {
     .image-header .heading {
-      margin-top: 4rem;
+      margin-top: 6rem;
       margin-left: 7.33945%;
       margin-right: 7.33945%;
     }
