@@ -4073,7 +4073,8 @@ sup {
 }
 @media (min-width: 48em) {
   .l-image-banner--left .callout-block {
-    width: 25vw;
+    max-width: 25vw;
+    min-width: 35rem;
     float: left;
     margin-right: 2.75229%;
   }
@@ -7500,6 +7501,8 @@ body.has-menu-open .l-main:before {
     .image-header .heading {
       position: absolute;
       bottom: 4rem;
+      background-color: rgba(0,0,0,0.25);
+      padding: 1rem;
     }
   }
   @media (min-width: 64em) {
