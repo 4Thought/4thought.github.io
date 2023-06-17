@@ -5678,7 +5678,7 @@ body.has-menu-open .l-main:before {
     font-size: 1.6rem;
     line-height: 1.6;
     font-family: PostGrotesk, Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-weight: 500;
+    /* font-weight: 500; */
   }
   .callout-block__content p + p {
     margin-top: 1.6rem;
