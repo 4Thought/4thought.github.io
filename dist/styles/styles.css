@@ -2211,6 +2211,7 @@ button {
 img {
   max-width: 100%;
   display: block;
+  margin: auto;
 }
 @media (prefers-reduced-motion: reduce) {
   * {
