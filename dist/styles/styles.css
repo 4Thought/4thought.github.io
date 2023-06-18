@@ -7092,19 +7092,25 @@ body.has-menu-open .l-main:before {
     flex: 0 0 100%;
   }
   @media (min-width: 48em) {
+    .footer__blocks > :first-child {
+      display: none;
+    }
     .footer__blocks > * {
       padding-left: 3rem;
       padding-right: 3rem;
-      width: 33.3333%;
-      flex-basis: 33.3333%;
+      width: 33%;
+      flex-basis: 33%;
     }
   }
   @media (min-width: 64em) {
+    .footer__blocks > :first-child {
+      display: block;
+    }
     .footer__blocks > * {
       padding-left: 4.5rem;
       padding-right: 4.5rem;
-      width: 20%;
-      flex-basis: 20%;
+      width: 25%;
+      flex-basis: 25%;
     }
   }
   @media (max-width: 47.99em) {
