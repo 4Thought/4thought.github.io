@@ -2578,7 +2578,7 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-body:before {
+/* body:before {
   content: "";
   position: fixed;
   display: block;
@@ -2589,7 +2589,7 @@ body:before {
   width: 1.2rem;
   background-color: #000000;
   z-index: 9999;
-}
+} */
 body.has-menu-open {
   overflow: hidden;
 }
