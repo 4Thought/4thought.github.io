@@ -7069,7 +7069,7 @@ body.has-menu-open .l-main:before {
     .footer__section--bottom {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
     }
   }
   .footer__blocks {
