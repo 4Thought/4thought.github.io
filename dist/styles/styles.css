@@ -4101,7 +4101,6 @@ sup {
   margin-left: -2.6rem;
 }
 .l-main {
-  min-height: 100vh;
   padding-top: 72px;
   position: relative;
   z-index: 10;
@@ -9948,7 +9947,7 @@ body.has-menu-open .l-main:before {
   }
   .scroll-btn--up {
     position: absolute;
-    bottom: 1rem;
+    bottom: -3rem;
     left: 2rem;
     right: auto;
     overflow: hidden;
