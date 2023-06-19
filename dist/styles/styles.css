@@ -5527,8 +5527,7 @@ body.has-menu-open .l-main:before {
 .btn {
   font-size: 1.4rem;
   line-height: 1.4;
-  font-family: "Montserrat", PostGrotesk, Helvetica Neue, Helvetica, Arial,
-    sans-serif;
+  font-family: PostGrotesk, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: 700;
   border: none;
   color: #fff;
