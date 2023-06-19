@@ -10089,7 +10089,7 @@ body.has-menu-open .l-main:before {
     }
   }
   .section--bleed {
-    width: calc(100vw - 1.2rem);
+    width: 100vw;
     margin-left: 50%;
     transform: translateX(-50%);
   }
