@@ -12038,3 +12038,6 @@ button.v-nav__link:focus {
 .sans-serif {
   font-family: PostGrotesk, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
+.light-weight {
+  font-weight: 400;
+}
