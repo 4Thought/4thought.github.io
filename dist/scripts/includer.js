@@ -11,7 +11,7 @@ function playDemo() {
   player.style.height = "80vh";
   player.style.margin = "auto";
   player.innerHTML =
-    '<iframe src="https://player.vimeo.com/video/822774374?h=cebe2573ff&autoplay=1&title=0&byline=0&portrait=0" style="width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe><script src="https://player.vimeo.com/api/player.js"></script>';
+    '<iframe src="https://player.vimeo.com/video/841995490?h=09aab010ec&autoplay=1&title=0&byline=0&portrait=0" style="width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe><script src="https://player.vimeo.com/api/player.js"></script>';
 
   var closeButton = document.createElement("div");
   closeButton.style.position = "fixed";
