@@ -1,0 +1,353 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      content="initial-scale=1, shrink-to-fit=no, width=device-width"
+      name="viewport"
+    />
+    <title>4Thought Technologies Inc.</title>
+    <link rel="stylesheet" href="dist\styles\styles.css" />
+    <link rel="stylesheet" href="dist\styles\fontawesome.css" />
+    <link rel="stylesheet" href="dist\styles\brands.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <style>
+      section {
+        max-width: 850px;
+      }
+      section {
+        margin: 0 auto;
+        padding: 40px 0;
+        text-align: center;
+      }
+      h1 {
+        font-size: 56px;
+        font-weight: 700;
+      }
+      h2 {
+        font-size: 32px;
+        font-weight: 700;
+      }
+      h3 {
+        font-size: 24px;
+        font-weight: 400;
+      }
+      h4 {
+        font-size: 20px;
+        font-weight: 700;
+      }
+      p {
+        font-size: 14px;
+      }
+      button {
+        font-family: PostGrotesk, Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        border: 0px none;
+        padding: 5px 15px;
+        border: solid 1px #1e1e1f;
+        border-radius: 3px;
+      }
+      .hr {
+        width: calc(100vw - 20px);
+        height: 1px;
+        background-color: rgba(0, 0, 0, 0.333);
+        margin: 0 auto;
+      }
+      .red-bg {
+        background-color: #d67766;
+      }
+      .red-text {
+        color: #d77766;
+      }
+      .blue-bg {
+        background-color: #8ba9d5;
+      }
+      .blue-text {
+        color: #8ba9d5;
+      }
+      .yellow-bg {
+        background-color: #d3ad73;
+      }
+      .logos {
+        display: flex;
+        justify-content: space-evenly;
+        max-width: 850px;
+        margin: 25px auto 0 auto;
+      }
+      .logos img {
+        max-height: 20px;
+      }
+      .portfolio-chart {
+        width: 835px;
+        height: 517px;
+        background: url(dist/images/portfolio-chart.png);
+        background-position: center center;
+        background-size: cover;
+        border-radius: 13px;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+        margin: 80px auto 0 auto;
+      }
+      .split-horizontal {
+        display: flex;
+        gap: 40px;
+      }
+      .split-horizontal > * {
+        flex: 1;
+      }
+      .split-horizontal > img {
+        max-width: 50%;
+        border-radius: 13px;
+      }
+      .vertical-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .vertical-center h2 {
+        margin-bottom: 20px;
+      }
+      .vertical-center h3 {
+        margin-bottom: 40px;
+      }
+      .step-container {
+        border-radius: 13px;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+        padding: 20px;
+      }
+      .step-number {
+        font-size: 40px;
+        border-radius: 50%;
+        width: 40%;
+        aspect-ratio: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        color: #ffffff;
+        font-weight: bold;
+      }
+      .step-container h4 {
+        margin: 20px 0;
+      }
+      img.placeholder {
+        height: 400px;
+        background: lightgrey;
+        border-radius: 13px;
+      }
+      .demo-container {
+        padding: 20px;
+        background-image: url(dist/images/color-lines-frame.png);
+        background-position: center;
+        background-size: cover;
+        max-width: 80%;
+        margin: 0 auto;
+      }
+      .demo-container video {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="l-main" id="main-content" tabindex="-1" role="main">
+      <!-- Menu -->
+      <div data-include="menu.html"></div>
+
+      <div class="u-color-bg-navy u-color-type-white">
+        <section class="section section--padded section--bleed">
+          <h1>Trading Profits, Less Risk</h1>
+          <h3 style="padding: 30px 0">
+            4Thought's GenAI platform empowers Forex professionals to create,
+            test &amp; automate winning trading strategies and workflows within
+            a fraction of the time.
+          </h3>
+          <button class="red-bg" style="margin-bottom: 30px">See How</button>
+          <!-- <img src="dist/images/color-lines-frame.png" /> -->
+          <div class="demo-container">
+            <video autoplay loop muted playsinline data-ambient-video-media>
+              <source src="dist/vid/demo.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </section>
+      </div>
+      <div>
+        <h3 style="padding-top: 50px; text-align: center">
+          Founded By Alums Of:
+        </h3>
+        <div class="hr" style="margin: 15px 0"></div>
+        <div class="logos">
+          <img src="dist/images/bloomberg-logo.png" />
+          <img src="dist/images/citi-logo.png" />
+          <img
+            style="max-height: 26px; margin-top: -8px"
+            src="dist/images/ey-logo.png"
+          />
+          <img style="max-height: 24px" src="dist/images/jpmorgan-logo.png" />
+          <img src="dist/images/mit-logo.png" />
+          <img style="max-height: 24px" src="dist/images/stripe-logo.png" />
+        </div>
+        <div class="portfolio-chart"></div>
+        <section style="text-align: left">
+          <h2 style="padding-bottom: 20px">Case Studies</h2>
+          <div class="split-horizontal">
+            <img
+              src="dist/images/business-people-meeting-discussing-data-screen.jpg"
+            />
+            <div>
+              <h3 style="padding-bottom: 20px">
+                TMS saves a global broker-dealer $1M annually
+              </h3>
+              <p style="padding-bottom: 20px">
+                InfoReach implemented TMS for the Customer globally. The new
+                solution provided the Customer with a Single order and basket
+                execution management system to facilitate all main trading
+                processes. It Reduced the annual costs of 3rd party execution
+                and order management technology by over 30%. It also reduced the
+                number of computer servers from 90 to under 20, saving the
+                Customer an additional $1M annually.
+              </p>
+              <div class="split-horizontal">
+                <div>
+                  <h4>30%</h4>
+                  <p class="red-text">Annual Cost Decrease</p>
+                </div>
+                <div>
+                  <h4>Saving $1M/Year</h4>
+                  <p class="red-text">Reduced Computer Servers Number By 70</p>
+                </div>
+              </div>
+              <button>Read Full Case</button>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="u-color-bg-navy u-color-type-white">
+        <section style="text-align: left">
+          <div class="split-horizontal" style="padding: 40px 0px">
+            <div class="vertical-center">
+              <h2 class="blue-text">INCREASE TRADING PROFITS</h2>
+              <p>
+                Increase revenue with less risk by using 4Thought's no-code AI
+                interface to help create and test trading ideas at market speed
+                before deploying them.
+              </p>
+            </div>
+            <img
+              src="dist/images/businessman-doing-ok-sign-while-holding-growth-chart.jpg"
+            />
+          </div>
+
+          <div class="split-horizontal" style="padding: 50px 0px">
+            <img
+              src="dist/images/graph-business-financial-investment-risk-word.jpg"
+            />
+            <div class="vertical-center">
+              <h2>REDUCE RISK</h2>
+              <p>
+                Avoid Draw Downs, 4Thought can monitor your portfolio and the
+                market for you alerting you of important changes based on your
+                commands and its own AI insights.
+              </p>
+            </div>
+          </div>
+          <div class="split-horizontal" style="padding: 50px 0px">
+            <div class="vertical-center">
+              <h2 class="blue-text">SAVE TIME</h2>
+              <p>
+                Our AI platform allows funds of all sizes to access trading
+                systems common among large Wall Street institutions to analyze,
+                test, and automate Forex strategies within a fraction of the
+                time.
+              </p>
+            </div>
+            <img
+              src="dist/images/stock-market-economy-investment-financial-concept.jpg"
+            />
+          </div>
+          <div class="split-horizontal" style="padding: 50px 0px">
+            <img
+              src="dist/images/two-young-worker-leading-business-meeting-about-cryptocurrencies-office.jpg"
+            />
+            <div class="vertical-center">
+              <h2>CUSTOMIZE FOR YOUR NEEDS</h2>
+              <p>
+                Become quantitative without changing your DNA. 4Thought supports
+                you with engineers who know you and your business and can help
+                you systematize your trading.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div>
+        <section>
+          <h2>Automated Trading with 4Thought Platform</h2>
+          <h3
+            class="red-text"
+            style="margin: 15px 0px 40px 0px; font-weight: bold"
+          >
+            A Three-Step Process Engineered for Market Speed
+          </h3>
+          <div class="split-horizontal" style="padding-bottom: 100px">
+            <div class="step-container">
+              <div class="step-number blue-bg">1</div>
+              <h4>STEP 1</h4>
+              <p>
+                Create & model Forex trading strategies with reliable,
+                professional-grade AI
+              </p>
+            </div>
+            <div class="step-container">
+              <div class="step-number red-bg">2</div>
+              <h4>STEP 2</h4>
+              <p>
+                Backtest strategies, paper trade, and set up automated market
+                monitoring
+              </p>
+            </div>
+            <div class="step-container">
+              <div class="step-number yellow-bg">3</div>
+              <h4>STEP 3</h4>
+              <p>
+                Refine within fraction of time to increase profits & reduce
+                drawdowns
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="u-color-bg-navy u-color-type-white">
+        <section style="text-align: left">
+          <h2 style="margin-bottom: 40px">ABOUT US</h2>
+          <div class="split-horizontal">
+            <img src="dist/images/empty-room-with-chairs-desks.jpg" />
+            <div class="vertical-center">
+              <h3 class="blue-text">
+                Making Automated Forex Trading More Profitable with Less Risk
+                and No Coding
+              </h3>
+              <p>
+                We Build an AI Driven No Code Platform for Forex Trading
+                Professionals making automated trading and risk management
+                simple. We partner with Institutions to develop state of the art
+                Market Monitoring and Algo Trading tools that do not require
+                quants or coders. We also collaborate with our partners to build
+                customized versions of our software that implements their
+                specific trading systems.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div data-include="Footer.html"></div>
+      <!-- End Main Content -->
+    </main>
+
+    <!-- Scripts -->
+
+    <script src="dist\scripts\includer.js"></script>
+  </body>
+</html>
