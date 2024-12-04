@@ -97,6 +97,14 @@
         display: flex;
         gap: 40px;
       }
+      @media (orientation: portrait) {
+        section {
+          margin: 0px 20px;
+        }
+        .split-horizontal {
+          flex-direction: column;
+        }
+      }
       .split-horizontal > * {
         flex: 1;
       }
