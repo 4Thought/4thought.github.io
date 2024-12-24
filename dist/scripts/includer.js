@@ -64,10 +64,23 @@ function setupClickHandler() {
         if (clickedElement.hasAttribute("data-back-to-top-link")) {
           window.scrollTo({ top: 0, behavior: "smooth" });
         }
+        if (clickedElement.hasAttribute("data-update-banner-close")) {
+          sessionStorage.setItem("closedUpdateBanner", "true");
+          document.querySelector(".update-banner").classList.add("closed");
+        }
       }
       clickedElement = clickedElement.parentElement;
     }
   });
+}
+
+function updateAfterLoad() {
+  var updateBanner = document.querySelector(".update-banner");
+  if (updateBanner) {
+    if (sessionStorage.getItem("closedUpdateBanner") !== "true") {
+      updateBanner.style.display = "block";
+    }
+  }
 }
 
 window.onload = function () {
@@ -79,6 +92,7 @@ window.onload = function () {
       4 == d.readyState && (e = d.status),
         c.test(location.href) && d.responseText && (e = 200),
         4 == d.readyState && 200 == e && (a.outerHTML = d.responseText);
+      updateAfterLoad();
     };
     try {
       d.open("GET", b, !0), d.send();
