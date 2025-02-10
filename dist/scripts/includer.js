@@ -82,7 +82,7 @@ function setupClickHandler() {
 
 function updateAfterLoad() {
   var updateBanner = document.querySelector(".update-banner");
-  if (updateBanner) {
+  if (updateBanner && !window.__BYPASS_UPDATE_BANNER__) {
     if (sessionStorage.getItem("closedUpdateBanner") !== "true") {
       updateBanner.style.display = "block";
     }
