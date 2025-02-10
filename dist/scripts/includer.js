@@ -68,6 +68,12 @@ function setupClickHandler() {
           sessionStorage.setItem("closedUpdateBanner", "true");
           document.querySelector(".update-banner").classList.add("closed");
         }
+        if (clickedElement.hasAttribute("data-smooth-scroll")) {
+          e.preventDefault();
+          document.querySelector(e.target.getAttribute("href")).scrollIntoView({
+            behavior: "smooth"
+          });
+        }
       }
       clickedElement = clickedElement.parentElement;
     }
