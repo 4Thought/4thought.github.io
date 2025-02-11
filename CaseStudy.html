@@ -18,6 +18,15 @@
       body {
         font-size: 20px;
       }
+      .h-nav.h-nav--main {
+        visibility: hidden;
+      }
+      .expandable-list__item {
+        display: none;
+      }
+      .footer__block .footer-links {
+        display: none;
+      }
       section {
         max-width: 850px;
       }
@@ -321,7 +330,9 @@
     </main>
 
     <!-- Scripts -->
-
+    <script>
+      window.__BYPASS_UPDATE_BANNER__ = true;
+    </script>
     <script src="dist\scripts\includer.js"></script>
   </body>
 </html>
